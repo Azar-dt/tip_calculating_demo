@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #cctip { 
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="tip-table">
+       
+    <h2>Tips Calculator</h2>
+    <p id="input">
+        <input type="text" id="bill" placeholder="Your bill"> $
+    </p>
+    <p>
+        How was your service <br>
+        <select id="rate" >
+            <option disabled selected value="0">
+                --Choose option--
+            </option>
+            <option value="0.03">3% Bad</option>
+            <option value="0.05">5% Not really good</option>
+            <option value="0.1">10% Its Ok</option>
+            <option value="0.15">15% Good</option>
+            <option value="0.25">25% Verygood</option>
+        </select>
+    </p>
+    <p>
+        How many people are sharing the bill?
+        <br>
+        <input type="number" id="numPeople" placeholder="0">
+    </p>
+    <button type="button" id="btn">
+        Calculating tip
+    </button>
+    <div id="cctip">
+        <p id="tip"></p> 
+    </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
